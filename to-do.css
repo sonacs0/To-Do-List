@@ -1,0 +1,201 @@
+/* Basic Style */
+/* body {
+    background: #fff;
+    color: #333;
+    
+  } */
+body {
+  background-image: url(https://slidescorner.com/wp-content/uploads/2022/08/01-500x281.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+/* 
+
+ */
+ .buttona {
+    height: 44px;
+    border-radius: 4px;
+    background-image:linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    padding: 7px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px !important;
+  }
+  
+  .buttona span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  p.new {
+    display: flex;
+}
+  .buttona span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttona:hover span {
+    padding-right: 25px;
+  }
+  
+  .buttona:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.hed {
+    margin-top: 60px;
+  text-align: center;
+  font: normal normal bold 34px/44px Montserrat;
+  letter-spacing: 0px;
+  color: #1f1f1f;
+}
+.container {
+  display: block;
+  width: 500px;
+  margin: 40px auto 0;
+  padding:30px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li,
+h3 {
+  clear: both;
+  list-style: none;
+}
+input,
+button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: #333;
+}
+/* Heading */
+h3,
+label[for="new-task"] {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #ddcaca;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 25px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow: scroll;
+} */
+
+.glass {
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+/* New Task */
+label[for="new-task"] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-task {
+    margin-right: 20px;
+  float: left;
+  width: 318px;
+}
+p > button:hover {
+  color: #0fc57c;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li > input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  color: #cf2323;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}
